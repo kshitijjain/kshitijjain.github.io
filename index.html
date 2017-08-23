@@ -1,5 +1,51 @@
 <html>
-    <body>
-        <h1>Welcome to the world of Kshitij Jain!</h1>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Angular Material style sheet -->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body ng-app="myPortfolio" ng-controller="portfolioController" ng-cloak>
+        <!-- <md-button class="md-primary md-raised">sdsd</md-button>
+        <md-button class="md-accent md-raised">sds</md-button>
+        <md-button class="md-warn md-raised">sdsd</md-button>
+        <div>hello world</div> -->
+        <div id="top-div" md-colors="{background: 'primary'}"></div>
+        <div class="container">
+            <md-card><!--personal info-->
+                <md-card-content layout="row" layout-align="space-around center">
+                    <div flex="25">
+                        <img id="my-picture" src="images/my-picture.jpg" alt="">
+                    </div>
+                    <div layout="column">
+                        <div class="md-display-2">Kshitij Jain</div>
+                        <div>
+                            <img class="contact-logo" ng-repeat="contactInfo in metaData.contactInfos" src="images/{{contactInfo.logo}}" alt="">
+                        </div>
+                    </div>
+                </md-card-content>
+            </md-card>
+
+            <md-card> <!--skills section-->
+                <div class="toolbar md-title" md-colors="{background: 'primary'}" layout="row" layout-align="start center">
+                    <div>Skills</div>
+                </div>
+                <div layout="row" layout-wrap>
+                    <div layout="column" layout-align="space-between-center" flex="25" ng-repeat="skill in metaData.skills">
+                        <img class="skill-image" src="images/{{skill.logo}}" alt="hello">
+                        <div>{{skill.name}}</div>
+                    </div>                   
+                </div>    
+            </md-card> 
+        </div>   
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+        <script src="javascripts/script.js"></script>
     </body>
 </html>

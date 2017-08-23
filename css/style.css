@@ -1,0 +1,61 @@
+.skill-image{
+    width: 120px;
+}
+
+.toolbar{
+    height: 45px;
+    padding: 8px;
+}
+
+#top-div{
+    height: 200px;
+}
+
+.container{
+    margin-top: -155px;
+}
+
+#my-picture{
+    width: 100%;
+}
+
+.contact-logo{
+    width: 20px;
+    margin-right: 5px;
+}
+
+/* bootstrap classes */
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+}
+  
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+
+  

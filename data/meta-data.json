@@ -1,0 +1,38 @@
+{
+    "contactInfos": [
+        {
+            "logo": "linkedin.png",
+            "url": "www.linkedin.com"
+        },
+        {
+            "logo": "github.png",
+            "url": "www.github.com"
+        },
+        {
+            "url": "www.quora.com",
+            "logo": "quora.jpg"
+        }
+    ],
+    "skills": [
+        {
+            "name": "HTML 5",
+            "logo": "html5.png"
+        },
+        {
+            "name": "CSS 3",
+            "logo": "css3.png"
+        },
+        {
+            "name": "JQuery",
+            "logo": "jquery.png"
+        },
+        {
+            "name": "Angular JS",
+            "logo": "angular.png"
+        },
+        {
+            "name": "Grunt",
+            "logo": "grunt.png"
+        }
+    ]
+}
