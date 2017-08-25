@@ -7,7 +7,10 @@ angular.module("myPortfolio", ["ngMaterial"])
       'hue-2': '600',
       'hue-3': 'A100'
     })
-    .accentPalette('indigo');
+    .accentPalette('indigo')
+    .backgroundPalette('grey', {
+        'default': '200'
+    });
 })
 .factory("metaDataProvider", ["$http", function($http){
     var metaData= {};
