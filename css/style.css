@@ -1,10 +1,10 @@
 .skill-image{
-    width: 120px;
+    width: 100px;
 }
 
 .toolbar{
     height: 45px;
-    padding: 8px;
+    padding: 16px;
 }
 
 #top-div{
@@ -36,7 +36,7 @@
     padding: 12px 0;    
 }
 
-#skills-card{
+.card{
     margin-top: 40px;
 }
 
@@ -52,6 +52,15 @@
     margin: 0;
     height: 45px;
     border-radius: 0;
+}
+
+.skill-group-heading{
+    padding: 16px;
+    font-size: 18px;
+}
+
+#iitr-logo-div{
+    width: 15%;
 }
 
 /* bootstrap classes */
