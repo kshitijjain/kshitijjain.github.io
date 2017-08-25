@@ -41,9 +41,15 @@
                            
                         </div>
                         <div md-colors="{background: 'primary'}" id="contact-links-wrapper" layout="row" layout-align="space-between">
-                            <md-button class="contact-links-button">ab</md-button>
-                            <md-button class="contact-links-button">ab</md-button>
-                            <md-button class="contact-links-button">ab</md-button>
+                            <md-button class="contact-links-button">
+                                <img class="contact-logo" src="images/linkedin.png" alt="">
+                            </md-button>
+                            <md-button class="contact-links-button">
+                                <img  class="contact-logo" src="images/github.png" alt="">
+                            </md-button>
+                            <md-button class="contact-links-button">
+                                <img class="contact-logo" src="images/quora.jpg" alt="">
+                            </md-button>
                             <md-button class="contact-links-button">ab</md-button>
                             <md-button class="contact-links-button">ab</md-button>
                             <md-button class="contact-links-button">ab</md-button>
@@ -52,17 +58,50 @@
                     </div>
                 </div>
             </md-card>
+
+            <md-card class="card"><!--about me section-->
+                <div class="toolbar md-title" md-colors="{background: 'primary'}" layout="row" layout-align="start center">
+                    <div>About me</div>
+                </div>
+                <md-card-content>
+                    I am a full stack web developer with expertise in Angular JS and Node JS. Well versed in various automation and testing tools like Karma, Jasmine, Gulp and Grunt. I have around 2 years of experience working in these technologies. When I don't code, I love to sing, read about financial wisdom, personal development and write on quora. Want to get in touch? Hit my email.
+                </md-card-content>
+            </md-card>
            
-            <md-card id="skills-card"> <!--skills section-->
+            <md-card class="card"> <!--skills section-->
                 <div class="toolbar md-title" md-colors="{background: 'primary'}" layout="row" layout-align="start center">
                     <div>Skills</div>
                 </div>
+                <div class="skill-group-heading" md-colors="{color: 'primary'}">Languages and Frameworks</div>
                 <div layout="row" layout-wrap id="skills-wrapper">
                     <div layout="column" layout-align="space-between-center" flex="25" ng-repeat="skill in metaData.skills">
                         <img class="skill-image" src="images/{{skill.logo}}" alt="hello">
                         <div>{{skill.name}}</div>
                     </div>                   
-                </div>    
+                </div>
+                
+                <div class="skill-group-heading" md-colors="{color: 'primary'}">Task Runners</div>
+                <div layout="row" layout-wrap id="skills-wrapper">
+                        <div layout="column" layout-align="space-between-center" flex="25" ng-repeat="skill in metaData.skills">
+                            <img class="skill-image" src="images/{{skill.logo}}" alt="hello">
+                            <div>{{skill.name}}</div>
+                        </div>                   
+                    </div>
+            </md-card>
+
+            <md-card class="card"><!--education card-->
+                <div class="toolbar md-title" md-colors="{background: 'primary'}" layout="row" layout-align="start center">
+                    <div>Education</div>
+                </div>
+
+                <md-card-content layout="row" layout-align="start center">
+                    <div id="iitr-logo-div" flex-offset="5">
+                        <img style="width:100%" src="images/iitr.jpg" alt="">
+                    </div>
+                    <div style="margin-left: 16px;">
+                        B. Tech. IIT Roorkee Class of 2015
+                    </div>
+                </md-card-content>
             </md-card>
         </div>   
 
