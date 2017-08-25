@@ -14,30 +14,47 @@
         <div id="top-div" md-colors="{background: 'primary'}"></div>
         <div class="container">
             <md-card><!--personal info-->
-                <md-card-content layout="row" layout-align="space-around center">
-                    <div flex="25">
+                <div layout="row">
+                    <div id="my-picture-div">
                         <img id="my-picture" src="images/my-picture.jpg" alt="">
                     </div>
-                    <div layout="column">
-                        <div class="md-display-2">Kshitij Jain</div>
-                        <div>
-                            <img class="contact-logo" ng-repeat="contactInfo in metaData.contactInfos" src="images/{{contactInfo.logo}}" alt="">
+                    <div id="personal-info-wrapper" layout="column" layout-align="space-between">
+                        <div id="personal-info">
+                            <div class="md-display-2">I'm Kshitij Jain</div>
+                            <div>Full Stack Developer</div>
+                            <md-divider></md-divider>
+                            <div layout="row" layout-align="start center" style="margin-bottom: 5px">
+                                <div md-colors="{background: 'primary'}" style="padding: 3px 5px; margin-right: 5px;">DOB</div>
+                                <div>17-May-1993</div>
+                            </div>
+                            <div>
+                                <img class="contact-logo" ng-repeat="contactInfo in metaData.contactInfos" src="images/{{contactInfo.logo}}" alt="">
+                            </div>
+                        </div>
+                        <div md-colors="{background: 'primary'}" id="contact-links-wrapper" layout="row" layout-align="space-between">
+                            <md-button class="contact-links-button">ab</md-button>
+                            <md-button class="contact-links-button">ab</md-button>
+                            <md-button class="contact-links-button">ab</md-button>
+                            <md-button class="contact-links-button">ab</md-button>
+                            <md-button class="contact-links-button">ab</md-button>
+                            <md-button class="contact-links-button">ab</md-button>
+                            <md-button class="contact-links-button">ab</md-button>
                         </div>
                     </div>
-                </md-card-content>
+                </div>
             </md-card>
-
-            <md-card> <!--skills section-->
+           
+            <md-card id="skills-card"> <!--skills section-->
                 <div class="toolbar md-title" md-colors="{background: 'primary'}" layout="row" layout-align="start center">
                     <div>Skills</div>
                 </div>
-                <div layout="row" layout-wrap>
+                <div layout="row" layout-wrap id="skills-wrapper">
                     <div layout="column" layout-align="space-between-center" flex="25" ng-repeat="skill in metaData.skills">
                         <img class="skill-image" src="images/{{skill.logo}}" alt="hello">
                         <div>{{skill.name}}</div>
                     </div>                   
                 </div>    
-            </md-card> 
+            </md-card>
         </div>   
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>

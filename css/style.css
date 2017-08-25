@@ -15,13 +15,43 @@
     margin-top: -155px;
 }
 
-#my-picture{
+#my-picture-div{
+    width: 25%;
+}
+
+#my-picture-div img{
     width: 100%;
+}
+
+#personal-info-wrapper{
+    width: 75%;
 }
 
 .contact-logo{
     width: 20px;
     margin-right: 5px;
+}
+
+#skills-wrapper{
+    padding: 12px 0;    
+}
+
+#skills-card{
+    margin-top: 40px;
+}
+
+#personal-info{
+    margin-left: 16px;
+}
+
+#contact-links-wrapper{
+    height: 45px;
+}
+
+.contact-links-button{
+    margin: 0;
+    height: 45px;
+    border-radius: 0;
 }
 
 /* bootstrap classes */
