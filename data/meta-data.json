@@ -34,5 +34,19 @@
             "name": "Grunt",
             "logo": "grunt.png"
         }
-    ]
+    ],
+    "detailedPersonalInfo":{
+        "dob":{
+            "label":"DOB",
+            "value":"May 17,1993"
+        },
+         "email":{
+            "label":"Email",
+            "value":"jn.kshitij@gmail.com"
+        },
+        "location":{
+            "label":"Location",
+            "value":"Location"
+        }
+    }
 }

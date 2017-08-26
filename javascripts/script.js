@@ -5,12 +5,15 @@ angular.module("myPortfolio", ["ngMaterial"])
       'default': '900', 
       'hue-1': '100', 
       'hue-2': '600',
-      'hue-3': 'A100'
+      'hue-3': '50'
     })
     .accentPalette('indigo')
-    .backgroundPalette('grey', {
-        'default': '200'
-    });
+    // .primaryPalette('grey', {
+    //     default: '900'
+    // });
+    // .backgroundPalette('red', {
+    //     'default': '50'
+    // });
 })
 .factory("metaDataProvider", ["$http", function($http){
     var metaData= {};
