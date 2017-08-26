@@ -15,7 +15,7 @@ angular.module("myPortfolio", ["ngMaterial"])
 .factory("metaDataProvider", ["$http", function($http){
     var metaData= {};
     metaData.getMetaData= function(){
-        return $http.post("data/meta-data.json");
+        return $http.get("data/meta-data.json");
     };
     return metaData;
 }])
